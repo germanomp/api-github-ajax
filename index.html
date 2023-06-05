@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+      #result {
+        max-width: 1200px; 
+      }
+      #profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+      }
+    </style>
+</head>
+<body class="flex items-center justify-center bg-gray-200">
+  <div class="flex flex-col items-center">
+    <h1 class="text-4xl text-red-700 font-bold mt-5 mb-7">Repositórios GitHub</h1>
+
+    <div class="flex flex-col items-center mb-4">
+        <label for="username" class="text-red-700 font-bold">Usuário do GitHub:</label>
+        <input type="text" id="username" class="border border-gray-400 p-2 mb-2">
+        <button id="loadBtn" class="bg-red-600 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">Carregar Repositórios</button>
+    </div>
+    
+    <div id="profile"></div>
+    <div id="result"></div>
+  </div>
+</body>
+</html>
