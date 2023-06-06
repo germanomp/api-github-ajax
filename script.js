@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     xhr.open('GET', 'https://api.github.com/users/' + username + '/repos', true);
-    xhr.setRequestHeader('Authorization', 'Bearer SEU_TOKEN_DE_ACESSO_PESSOAL');
     xhr.send();
 
     var profileXhr = new XMLHttpRequest();
@@ -58,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     profileXhr.open('GET', 'https://api.github.com/users/' + username, true);
-    profileXhr.setRequestHeader('Authorization', 'Bearer SEU_TOKEN_DE_ACESSO_PESSOAL');
     profileXhr.send();
   }
 
